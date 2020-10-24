@@ -6,4 +6,6 @@ COPY package.json yarn.lock ./
 
 RUN yarn && yarn browserslist --update-db
 
+COPY . ./
+
 CMD ["yarn", "run", "start"]
